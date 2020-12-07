@@ -1,4 +1,3 @@
-echo "# react-blog"
 
 # Getting Started with Create React App
 
