@@ -2,8 +2,20 @@
   display: "flex";
   justify-content: "space-around";
   line-height: 3;
+  background-color: #BB4328;
+  box-shadow: 2px 11px 15px 4px rgba(0,0,0,0.28);
+  width:100%;
+  border-radius: 4px;
+  top: 0px !important;
+  
 }
 
 .navActive {
-  color: #ff008d;
+  color: #b8c041 !important;
+}
+
+.nav-item{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
 }

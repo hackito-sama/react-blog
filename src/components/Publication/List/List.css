@@ -10,7 +10,8 @@ h2{
 .card{
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 50%;
     padding: 5px 12px;
+    box-shadow: 7px 11px 15px 4px rgba(0,0,0,0.28)
 }

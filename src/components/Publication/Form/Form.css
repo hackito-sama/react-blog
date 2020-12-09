@@ -1,3 +1,39 @@
-form{
-    display: block;
+.form{
+    margin: 0px auto !important;
+    width: 50%;
 }
+
+.inputs{
+    display: block;
+    margin: 10px 0;
+}
+
+.textInput{
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+
+}
+
+.textArea{
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+.button{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #BB4328;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px 10px;
+}
+
