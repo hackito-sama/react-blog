@@ -1,32 +1,18 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import Form from "./components/Publication/Form/Form";
-import List from "./components/Publication/List/List";
-import { publicationService } from "./services/publications";
-
-import "./App.css";
-
-export const BlogContext = React.createContext() //se crea el contexto
+import Navigation from "./Components/NavigationBar/Navigation";
+import Publications from "./Containers/Publications/Publications";
+import Form from "./Components/Publication/Form/Form";
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    publicationService.getPublications().then((response) => {
-      setData(response.data.data);
-    });
-  }, []);
-
   return (
-    <BlogContext.Provider value={{
-      data,
-      setData
-    }}>
-      <div>
-        <List />
-        <Form />
-      </div>
-    </BlogContext.Provider>
+    <BrowserRouter>
+      <Navigation/>
+      <Route path="/" exact component={Publications} />
+      <Route path="/publication/add" component={Form} />
+      <Route path="/publication/edit/:id?" component={Form} />
+    </BrowserRouter>
   );
 }
 

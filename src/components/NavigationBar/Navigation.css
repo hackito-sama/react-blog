@@ -1,0 +1,9 @@
+.nav {
+  display: "flex";
+  justify-content: "space-around";
+  line-height: 3;
+}
+
+.navActive {
+  color: #ff008d;
+}

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import moment from "moment";
 
-import { BlogContext } from "../../../App";
+import { BlogContext } from "../../../Containers/Publications/Publications";
 
 import "./List.css";
 
