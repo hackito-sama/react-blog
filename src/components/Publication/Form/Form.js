@@ -1,9 +1,10 @@
 import React, { useState, useContext } from 'react';
 import moment from "moment";
-import { Redirect } from 'react-router-dom';
 //import {BlogContext} from '../../../Containers/Publications/Publications';
 
 import { publicationService } from '../../../services/publications';
+
+import './Form.css';
 
 const Form = ({ history }) => {
     let currentDate = moment().format("YYYY-MM-DD");
