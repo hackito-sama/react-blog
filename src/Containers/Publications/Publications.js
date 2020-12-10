@@ -8,9 +8,11 @@ export const BlogContext = React.createContext(); //se crea el contexto
 
 function Publications() {
   const [data, setData] = useState([]);
+  
 
   useEffect(() => {
-    publicationService.getPublications().then((response) => {
+    const apiEndpoint = process.env.REACT_APP_API_URL + process.env.REACT_APP_PUBLICATION;
+    publicationService.getPublications(apiEndpoint).then((response) => {
       setData(response.data.data);
     });
   }, []);

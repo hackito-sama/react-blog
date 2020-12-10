@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import moment from "moment";
+import { Link } from 'react-router-dom'
 
 import { BlogContext } from "../../../Containers/Publications/Publications";
 
@@ -16,7 +17,9 @@ const List = () => {
       {data.map((pub) => (
         <div key={pub.id} className="card">
           
+          <Link to={ `/publication/detail/${pub.id}`}>
           <h3>{pub.title}</h3>
+          </Link>
           <span>{moment(pub.createat).format('DD/MM/YYYY')}</span>
           <p>{pub.description}</p>
 
