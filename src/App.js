@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 import Navigation from "./Components/NavigationBar/Navigation";
-import Publications from "./Containers/Publications/Publications";
 import Form from "./Components/Publication/Form/Form";
-import Detail from "./Components/Publication/Detail/Detail";
+
+import Publications from "./Containers/Publications/Publications";
+import Detail from "./Containers/Detail/Detail";
 
 function App() {
   return (

@@ -3,9 +3,6 @@ import React, { useState, useEffect } from "react";
 import List from "../../Components/Publication/List/List";
 import { publicationService } from "../../services/publications";
 
-
-export const BlogContext = React.createContext(); //se crea el contexto
-
 function Publications() {
   const [data, setData] = useState([]);
   
@@ -18,15 +15,9 @@ function Publications() {
   }, []);
 
   return (
-    <BlogContext.Provider
-      value={{
-        data,
-        setData,
-      }}>
       <div>
-        <List />
+        <List data={data}/>
       </div>
-    </BlogContext.Provider>
   );
 }
 

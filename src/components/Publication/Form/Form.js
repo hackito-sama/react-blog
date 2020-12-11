@@ -1,6 +1,5 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import moment from "moment";
-//import {BlogContext} from '../../../Containers/Publications/Publications';
 
 import { publicationService } from "../../../services/publications";
 
@@ -11,7 +10,7 @@ const Form = ({ history }) => {
 
   const [title, setTitle] = useState();
   const [description, setDescription] = useState();
-  //const {data, setData} = useContext(BlogContext);
+
 
   const onSubmitHandler = (e) => {
     e.preventDefault();

@@ -1,14 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import moment from "moment";
 import { Link } from 'react-router-dom'
 
-import { BlogContext } from "../../../Containers/Publications/Publications";
 
 import "./List.css";
 
 //component
-const List = () => {
-  const { data } = useContext(BlogContext);
+const List = ({data}) => {
 
   return (
     <div className="list-container">
